@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}blog article{% endblock %}
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{ article.title }}</h1>
+</div>
+<div class="row1">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center"><span>{{ article.author.username }}</span><span style="margin-left: 20px">{{ publish }}</span> </p>
+        <div>{{ article.body }}</div>
+    </div>
+    <div class="col-xs-6 col-md-4">
+        <h2>广告</h2>
+        <p>跟老齐学： www.itdi忏肝.com</p>
+        <img width="200px" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1183057007,4270556535&fm=26&gp=0.jpg">
+    </div>
+</div>
+{% endblock %}
